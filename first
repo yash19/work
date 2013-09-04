@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Subiksha Constructions</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<meta name="viewport" content="width-device-width, intial-scale-1.0">
+	</head>
+
+	<body class="main-wrapper">
+		<header class="main-header">
+			<div class="home">
+				<h1><a href="index.html" title="HOME">HOME</a></h1>
+			</div>
+			<div class="logo">
+				<h1><a title="SUBIKSHA"></a></h1>
+			</div>
+			<div class="form-header">
+				<form action="#" method="get" name="form-header">
+					<label for="lastlogin" class="lastlogin"><span id="llogin">Last Login:</span></label><input type="text" name="lastlogin" id="lastlogin" value="10-07-2013 18.00" readonly>	<br>		
+					<input type="search" class="search search-img" size="15" placeholder="Search" ><input type="image" class="search-img" id="search-img" src="images/search-icon.png" title="Search">
+				</form>
+			</div>
+			<div class="breadcrumb">
+				<nav>
+						<ul>
+							<li><h3 id="home-nav"><a href="index.html" title="HOME">HOME</a></h3></li>
+							 <li><a href="#" id="company">Company</a></li>
+							<li><a href="#">Bank Details</a></li>
+							<li><a href="#">Manage TbI Bank Details</a></li>
+							<li><span id="current-page">Create Bank Details</span></li>
+						</ul>
+					</nav>
+			</div>
+			<div class="header-right">
+				<table border="" id="table-header">
+						<tr>
+							<td><img src="images/IST.png" width="13px" height="13px" alt="IST"/></td>
+							<td class="td" >IST (Indian Standard Time)</td>
+						</tr>
+						<tr>
+							<td><img src="images/time_ico.gif" width="13px" height="13px" alt="Time" /></td>
+							<td class="td">2:11:13 pm</td>
+						</tr>
+						<tr>
+							<td><img src="images/date.png" width="13px" height="13px" alt="Date" /></td>
+							<td class="td">Sunday 28 July 2013</td>
+						</tr>
+					</table>
+			</div>
+			<div class="logout">
+				<h1><a href="#" title="Logout">Logout</a></h1>
+			</div>
+		</header>
+
+		<section class="content-wrap">
+			<section class="main-content-wrap">
+
+			<article class="main-nav">
+				<nav>
+					<ul>
+						<li><h3 id="inbox"><a href="index.html" title="Inbox">Inbox</a></h3></li>
+						<li><h3 id="write"><a href="index.html" title="Write">Write</a></h3></li>
+						<li><h3 id="drafts"><a href="index.html" title="Drafts">Drafts</a></h3></li>
+						<li><h3 id="tasks"><a href="index.html" title="Tasks">Tasks</a></h3></li>
+						<li><h3 id="settings"><a href="index.html" title="Settings">Settings</a></h3></li>
+
+					</ul>						
+				</nav>
+			</article>
+
+				<article class="main-content">
+					<header>
+							<h1>Edit/Update Bank Details</h1>
+							<p>Fields with <span style="color:red">*</span> are required.</p>
+					</header>
+					<content class="content">
+						<form name="update" id="update" action="#" method="post">
+							<table>
+								<tr>
+									<td><label for="bank-name">Bank Name<span style="color:red">*</span>:</td>
+									<td><input type="text" id="bank-name" size="50" autofocus required></td>
+								</tr>	
+								<tr>
+									<td><label for="bank-description">Bank Description:</td>
+									<td><textarea class="textarea" rows="5" cols="39"id="bank-description" style="resize:horizontal;overflow-y:scroll"></textarea></td>
+								<tr>
+									<td><label for="branch-name">Branch Name<span style="color:red">*</span>:</td>
+									<td><input type="text" id="branch-name" size="50" required></td>
+								</tr>
+								<tr>
+									<td><label for="address1">Address:</td>
+									<td><input type="text" id="address1" size="50" ><br><input type="text" id="address2" size="50" ></td>
+								</tr>
+								<tr>
+									<td><label for="city">City<span style="color:red">*</span>:</td>
+										<td><input type="text" id="city" size="50" required></td>
+									</tr>
+									<tr>
+										<td><label for="state">State<span style="color:red">*</span>:</td>
+										<td><input type="text" id="state" size="50" required></td>
+									</tr>
+									<tr>
+										<td><label for="pincode">pincode<span style="color:red">*</span>:</td>
+										<td><input type="text" id="state" size="20" required></td>
+									</tr>
+									<tr>
+										<td><label for="ifsc-code">IFSC Code<span style="color:red">*</span>:</td>
+										<td><input type="text" id="ifsc-code" size="30" required></td>
+									</tr>
+									<tr>
+										<td><label for="micr-code">MICR Code<span style="color:red">*</span>:</td>
+										<td><input type="text" id="micr-code" size="30" required></td>
+									</tr>
+									<tr>
+										<td><label for="dd">Dd In Favour Of:</td>
+										<td><input type="text" id="dd" size="50"></td>
+									</tr>
+									
+									</table>
+							</form>
+						</content>
+						<footer>
+								<input type="submit" id="manage" value="Manage" formaction="#">
+								<input type="submit" id="save" value="Save" formaction="#">
+						</footer>
+					</article>
+				</section>
+			<aside class="profile-side">
+				<div id="profile">
+						<h1 class="profile"><a href="#" title="Profile Pic">Profile Picture</a></h1>
+						<table border="0px" class="signout">
+							<tr><td><img src="images/time.gif" style="width=12px; height:12px; margin-top:4px"/><a href="#" title="Signout" >Signout</a> </td>
+						</tr>
+						</table>
+						<p class="welcome">Welcome<br><span id="user-name">Yasser Arafath</span> </p>
+						<table border="0px" class="viewprofile">
+							<tr><td><img src="images/time.gif" style="width=12px; height:12px;"/><a href="#" title="View Profile" >View Profile</a> </td>
+						</tr>
+						</table>
+						<table border="0px" class="editprofile">
+							<tr><td><img src="images/time.gif" style="width=12px; height:12px;"/><a href="#" title="Edit Profile" >Edit Profile</a> </td>
+						</tr>
+						</table>
+					</div>
+			</aside>
+			<aside class="side-nav">
+				<nav>
+							<ul >
+								<li id="active"><a href="#" title="Bank Details" active>Bank Details</a></li>
+								<li><a href="#" title="Client Details" >Client Details</a></li>
+								<li><a href="#" title="Company Details" >Company Details</a></li>
+								<li><a href="#" title="Company Job Type Details" >Company Job Type Details</a></li>
+								<li><a href="#" title="Complaint Registration Details" >Complaint Registration Details</a></li>
+								<li><a href="#" title="Flat Job Details" >Flat Job Details</a></li>
+								<li><a href="#" title="Flat Master Details" >Flat Master Details</a></li>
+								<li><a href="#" title="Invoice Details" >Invoice Details</a></li>
+								<li><a href="#" title="Payment Details" >Payment Details</a></li>
+								<li><a href="#" title="Project Company Details" >Project Company Details</a></li>
+								<li><a href="#" title="Project Master Schedule" >Project Master Schedule</a></li>
+								
+							</ul>
+						</nav>
+
+			</aside>
+		</section>
+		
+		<footer class="main-foote">
+			
+		</footer>
+	</body>
+</html>
